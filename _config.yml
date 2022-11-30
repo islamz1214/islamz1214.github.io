@@ -1,1 +1,5 @@
-theme: jekyll-theme-slate
+collections:
+  projects:
+    output: true
+  guides:
+    output: true
