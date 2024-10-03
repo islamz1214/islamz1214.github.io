@@ -17,7 +17,7 @@
 	<body>
 
 	<!-- NAV -->	
-    <div class="sidebar-nav">
+    <div class="sidebar-nav" role="navigation" aria-label="Main">
         <div class="navbar navbar-default" role="navigation">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
@@ -35,7 +35,7 @@
 					{% for p in navigation_pages %}
 						{% if p.navigation_weight %}
 							<li>
-								<a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>
+								<a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %} aria-label="Read more about Seminole tax hike">
 									&nbsp{{ p.title }}
 								</a>
 							</li>
@@ -46,9 +46,11 @@
 		</div>
     </div>
 	
-	<div id="content">
-		{{ content }}
-	</div>
+	<main>
+		<div id="content">
+			{{ content }}
+		</div>
+	</main>
 
 	</body>
 	

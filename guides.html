@@ -5,8 +5,10 @@ navigation_weight: 3
 categories: guides
 ---
 
+<h1>Guides</h1>
+<hr>
 {% for guide in site.guides %}
-		<h3><a href="{{ guide.url }}">{{ guide.title }}</a></h3>
+		<h2><a href="{{ guide.url }}">{{ guide.title }}</a></h2>
 {% endfor %}
 
 

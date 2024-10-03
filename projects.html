@@ -5,9 +5,11 @@ navigation_weight: 2
 categories: projects
 ---
 
+<h1>Projects</h1>
+<hr>
 <div class="list-group">
 {% for project in site.projects reversed %}
-	<h3><a href="{{project.url}}">{{project.title}}</a></h3>
+	<h2><a href="{{project.url}}">{{project.title}}</a></h2>
 	<p class="summary">
 		{{project.description}}
 	</p>
