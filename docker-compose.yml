@@ -1,13 +1,5 @@
-version: '3'
 services:
   jekyll:
-      image: jekyll/jekyll:3.8.0
-      command: jekyll serve --livereload
-      environment: 
-        - JEKYLL_ENV=development
+      image: ghcr.io/islamz1214/website:latest 
       ports:
-          - 4000:4000
-          - '35729:35729'
-      volumes:
-          - ./:/srv/jekyll
-          - ./vendor/bundle:/usr/local/bundle
+        - 4000:4000
