@@ -1,5 +1,0 @@
-services:
-  jekyll:
-    image: ghcr.io/islamz1214/website:latest
-    ports:
-      - 4000:4000
